@@ -133,8 +133,21 @@ besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
 siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a - b);
 
 // 3f çözümü
-
-/* kodlar buraya */
+tekraredensayilar = [];
+let adet = {};
+for (let i = 0; i < sayilar.length; i++) {
+  let sayi = sayilar[i];
+  if (adet[sayi] === undefined) {
+    adet[sayi] = 1;
+  } else {
+    adet[sayi]++;
+  }
+}
+for (let sayi in adet) {
+  if (adet[sayi] > 1) {
+    tekraredensayilar.push(`${sayi} sayısı ${adet[sayi]} kere tekrar edilmiştir`);
+  }
+}
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
