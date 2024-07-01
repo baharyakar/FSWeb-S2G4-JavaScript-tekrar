@@ -114,7 +114,6 @@ for (let i = 1; i < sayilar.length; i++) {
 }
 
 // 3b çözümü:
-
 ucetambolunenler = [];
 sayilar.forEach((sayi) => {
   if (sayi % 3 === 0) {
@@ -123,7 +122,6 @@ sayilar.forEach((sayi) => {
 });
 
 // 3c çözümü:
-
 ucebolunenlerintoplami = ucetambolunenler.reduce((acc, curr) => acc + curr, 0);
 
 
@@ -132,8 +130,7 @@ besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
 
 
 // 3e çözümü
-
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a - b);
 
 // 3f çözümü
 
