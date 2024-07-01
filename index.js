@@ -121,18 +121,15 @@ sayilar.forEach((sayi) => {
     ucetambolunenler.push(sayi);
   }
 });
-console.log(ucetambolunenler);
 
 // 3c çözümü:
 
 ucebolunenlerintoplami = ucetambolunenler.reduce((acc, curr) => acc + curr, 0);
-console.log(ucebolunenlerintoplami);
-
 
 
 // 3d çözümü
+besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
 
-/* kodlar buraya */
 
 // 3e çözümü
 
