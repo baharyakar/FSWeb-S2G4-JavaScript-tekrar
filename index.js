@@ -121,10 +121,14 @@ sayilar.forEach((sayi) => {
     ucetambolunenler.push(sayi);
   }
 });
+console.log(ucetambolunenler);
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce((acc, curr) => acc + curr, 0);
+console.log(ucebolunenlerintoplami);
+
+
 
 // 3d çözümü
 
