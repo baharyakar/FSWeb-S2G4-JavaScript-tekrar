@@ -92,6 +92,7 @@ console.log(CemberinAlani(15, pi));
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
+
 let ucetambolunenler,
   enkucuk,
   enbuyuk,
@@ -101,8 +102,16 @@ let ucetambolunenler,
   tekraredensayilar;
 
 // 3a çözümü
-
-/* kodlar buraya */
+enbuyuk = sayilar[0];
+enkucuk = sayilar[0];
+for (let i = 1; i < sayilar.length; i++) {
+  if (sayilar[i] > enbuyuk) {
+    enbuyuk = sayilar[i];
+  }
+  if (sayilar[i] < enkucuk) {
+    enkucuk = sayilar[i];
+  }
+}
 
 // 3b çözümü:
 
